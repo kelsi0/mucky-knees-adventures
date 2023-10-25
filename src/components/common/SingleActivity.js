@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleSkills = ({ icon, title, description }) => {
+const SingleActivity = ({ icon, title, description }) => {
     return(
         <div className="col-md-4">
             <span className="fa-stack fa-4x">
@@ -14,4 +14,4 @@ const SingleSkills = ({ icon, title, description }) => {
     );
 }
 
-export default SingleSkills;
+export default SingleActivity;

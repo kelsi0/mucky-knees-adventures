@@ -3,7 +3,7 @@ import useFetchHero from '../hooks/useFetchHero';
 
 // Re-Usabled components
 import Header from '../components/common/Header';
-import Skills from "../components/common/Skills";
+import Activities from "../components/common/Activities";
 
 const query = `
 {	
@@ -43,7 +43,7 @@ const Home = () => {
                 showButton={false}
                 image={data.bannerImage.url}
             />
-            <Skills />
+            <Activities />
         </div>
     );
 }
