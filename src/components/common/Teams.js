@@ -25,6 +25,7 @@ const Team = () => {
     useEffect(() => {
         fetchData(query);
         setIsLoading(false);
+        // eslint-disable-next-line
     }, []);
 
     if (isLoading || !data) {
