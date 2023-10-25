@@ -26,7 +26,7 @@ const About = () => {
     useEffect(() => {
       fetchData(query);
       setIsLoading(false);
-    }, [fetchData]);
+    }, []);
     
     if (isLoading || !data) {
     return "Loading...";
