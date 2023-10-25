@@ -20,7 +20,8 @@ const Activities = () => {
   useEffect(() => {
     fetchData(query);
     setIsLoading(false);
-  }, [fetchData]);
+    // eslint-disable-next-line
+  }, []);
 
   if (isLoading || !data) {
     return "Loading...";
