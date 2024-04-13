@@ -7,17 +7,15 @@ import Activities from "../components/common/Activities";
 
 const query = `
 {	
-	heroCollection (where: {title: "Mucky Knees Adventures"}) {
-  	items {
-    	title,
-      subtitle,
-      bannerImage {
-        title
-        url
-      },
-      button
-  	}
-	}
+  hero (id: "5VmotV19JolV1p4tTNBHhw") {
+    title,
+    subtitle,
+    bannerImage {
+      title
+      url
+    },
+    button
+  }
 }`
 
 const Home = () => {

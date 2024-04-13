@@ -6,6 +6,7 @@ import './App.css';
 //Pages
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 const App = () => {
   return(
@@ -21,14 +22,10 @@ const App = () => {
             path="/about"
             element={<About />}
           />
-          {/*<Route*/}
-          {/*path="/contact"*/}
-          {/*component={Contact}*/}
-          {/*/>*/}
-          {/*<Route*/}
-          {/*path="/skill"*/}
-          {/*component={Skill}*/}
-          {/*/>*/}
+          <Route
+            path="/contact"
+            element={<Contact />}
+          />
         </Routes>
       </PageWrapper>
     </HashRouter>

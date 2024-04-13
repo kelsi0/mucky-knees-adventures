@@ -16,7 +16,7 @@ const PageWrapper = ({ children }) => {
                         <ul className="navbar-nav text-uppercase ml-auto">
                             <li className="nav-item"><Link className="nav-link js-scroll-trigger" to="/about">About</Link></li>
                             {/*<li className="nav-item"><Link className="nav-link js-scroll-trigger" to="/skill">Skills</Link></li>*/}
-                            {/* <li className="nav-item"><Link className="nav-link js-scroll-trigger" to="/contact">Contact</Link></li> */}
+                            <li className="nav-item"><Link className="nav-link js-scroll-trigger" to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                 </div>

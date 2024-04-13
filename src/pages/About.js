@@ -5,19 +5,17 @@ import Header from '../components/common/Header';
 import Team from '../components/common/Teams';
 
 const query = `
-{	
-	heroCollection (where: {title: "About Mucky Knees Adventures!"}) {
-  	items {
-    	title,
+{
+    hero(id: "74uP19SucArCRVaKEGYAvl") {
+      title,
       subtitle,
       bannerImage {
         title
         url
       },
       button
-  	}
-	}
-}`
+    }
+  }`
 
 const About = () => {
     const { data, fetchData } = useFetchHero();
@@ -30,6 +28,7 @@ const About = () => {
     }, []);
     
     if (isLoading || !data) {
+        console.log(isLoading, data);
     return "Loading...";
     }
 
@@ -37,13 +36,14 @@ const About = () => {
         <div className="custom-content-div">
             <Header
                 title={data.title}
-                subtitle={data.subtitle}
                 buttonText="Tell me more"
                 link="/services"
                 showButton={false}
                 image={data.bannerImage.url}
             />
-
+            <section className="container">
+                <p>{data.subtitle}</p>
+            </section>
             <section>
                 <Team />
             </section>
