@@ -4,7 +4,7 @@ const TeamItem = ({ img, title, role, github, facebook, linkedin }) => {
     return(
         <div className="col-lg-4">
         <div className="team-member">
-            <img className="mx-auto rounded-circle" src={img} alt="" />
+            <img className="mx-auto rounded-circle" src={img.url} alt="" />
             <h4>{title}</h4>
             <p className="text-muted">{role}</p>
             {github ?? <a className="btn btn-dark btn-social mx-2" href={github}><i className="fab fa-github"></i></a>}

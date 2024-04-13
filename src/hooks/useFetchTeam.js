@@ -7,7 +7,6 @@ const useFetchTeam = () => {
   async function fetchData(query) {
     const fetch = await fetchContentful(query);
     setData(fetch);
-
   }
 
   return {

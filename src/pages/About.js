@@ -28,7 +28,6 @@ const About = () => {
     }, []);
     
     if (isLoading || !data) {
-        console.log(isLoading, data);
     return "Loading...";
     }
 

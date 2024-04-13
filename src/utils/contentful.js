@@ -1,7 +1,7 @@
 export function fetchContentful(query) {
-    const spaceId = "huy8ljto44oc";
-    const apiKey = "uX_dAyKZfs5w2H6MKgf61gZMYd0-gKMl4CMi7oOYn94";
-    
+    const spaceId = process.env.REACT_APP_CONTENTFUL_SPACE;
+    const apiKey = process.env.REACT_APP_CONTENTFUL_API_KEY;
+
     return window
     .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
         method: "POST",
