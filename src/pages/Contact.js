@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">Contact Us</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 className="section-subheading text-muted">Please leave your details here and we will be in touch</h3>
                 </div>
                 <Formik
                     initialValues={{
