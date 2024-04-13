@@ -26,11 +26,9 @@ const PageWrapper = ({ children }) => {
             <footer className="footer py-4">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-4 text-lg-left">Copyright © Kelsey Sheridan 2020</div>
+                        <div className="col-lg-4 text-lg-left"></div>
                         <div className="col-lg-4 my-3 my-lg-0">
-                            <a className="btn btn-dark btn-social mx-2" href="https://github.com/kelsi0"><i className="fab fa-github"></i></a>
-                            <a className="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Kelsi0"><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/kelsey-jane-steed-sheridan/"><i className="fab fa-linkedin-in"></i></a>
+                            <a className="btn btn-dark btn-social mx-2" href="https://www.facebook.com/MuckyKnees"><i className="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                 </div>
