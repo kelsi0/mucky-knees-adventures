@@ -1,7 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import wideImage from '../../assets/images/double-logo.png';
+import smallerImage from '../../assets/images/simple-logo.png';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
-const Header = ({ image, title, subtitle, showButton, link, buttonText }) => {
+const Header = ({ title, subtitle, showButton, link, buttonText }) => {
+    const { width } = useWindowDimensions();
+    const image = width >= 768 ? wideImage : smallerImage;
+
     return(
         /* <!-- Masthead--> */
         <header className="masthead" >       

@@ -10,10 +10,6 @@ const query = `
   hero (id: "5VmotV19JolV1p4tTNBHhw") {
     title,
     subtitle,
-    bannerImage {
-      title
-      url
-    },
     button
   }
 }`
@@ -39,7 +35,6 @@ const Home = () => {
                 buttonText="Tell me more "
                 link="/skill"
                 showButton={false}
-                image={data.bannerImage.url}
             />
             <Activities />
         </div>
