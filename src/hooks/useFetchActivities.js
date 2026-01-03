@@ -1,18 +1,22 @@
-import {useState} from 'react';
-import {fetchContentful} from '../utils/contentful';
+import { useState } from 'react';
 
 const useFetchActivities = () => {
   const [data, setData] = useState(null);
 
   async function fetchData(query) {
-    const fetch = await fetchContentful(query);
-    setData(fetch.activityCollection.items);
+    const response = await fetch('/.netlify/functions/contentful', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query }),
+    });
+    const result = await response.json();
+    setData(result?.activityCollection?.items || null);
   }
 
   return {
     fetchData,
-    data
-  }
-}
+    data,
+  };
+};
 
 export default useFetchActivities;
